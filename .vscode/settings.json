@@ -34,5 +34,8 @@
     "**/.settings": true,
     "**/.factorypath": true,
     "**/node_modules": true
-  }
+  },
+  "eslint.workingDirectories": [
+    "src"
+  ]
 }

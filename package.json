@@ -15,6 +15,7 @@
     "test": "test"
   },
   "dependencies": {
+    "marked": "^3.0.2",
     "next": "^11.1.0",
     "next-seo": "^4.26.0",
     "react": "^17.0.2",
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^11.1.0",
+    "@types/marked": "^3.0.0",
     "@types/node": "^16.4.14",
     "@types/react": "^17.0.17",
     "@typescript-eslint/eslint-plugin": "^4.29.1",

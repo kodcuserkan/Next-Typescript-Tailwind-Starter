@@ -21,16 +21,18 @@
         "plugin:prettier/recommended"
       ],
       "parserOptions": {
-        "project": "./tsconfig.json"
+        "project": "./tsconfig.json",
+        "tsconfigRootDir": "/Users/serkanakman/Desktop/projects/typescript-next-tailwind/client",
       },
       "rules": {
         "prettier/prettier": [
           "error",
           {
             // "singleQuote": true,
-            "unused-imports": true
+            // "unused-imports": false,
           }
         ],
+        "react/jsx-props-no-spreading": 0,
         "react/destructuring-assignment": "off", // Vscode doesn't support automatically destructuring, it's a pain to add a new variable
         "jsx-a11y/anchor-is-valid": "off", // Next.js use his own internal link system
         "react/require-default-props": "off", // Allow non-defined react props as undefined
@@ -56,9 +58,9 @@
         ],
         "import/prefer-default-export": "off",
         "@typescript-eslint/no-unused-vars": "off",
-        "unused-imports/no-unused-imports": "error",
+        "unused-imports/no-unused-imports": 1,
         "unused-imports/no-unused-vars": [
-          "error",
+          1,
           { "argsIgnorePattern": "^_" }
         ]
       }
